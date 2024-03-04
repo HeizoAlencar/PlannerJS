@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner Em Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            <h1>Planner Em Javascript</h1>
+        </div>
+        <div class="gradient-line" ></div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="action-buttons">
+                <button  value="addTask" onclick="addTask()" class="action-button"></button>
+                <button  value="EditPlanner" onclick="EditPlanner()" class="action-button"></button>
+            </section>
+            <div class="boxs" >
+                <div class="box" id="To-Do-List" >
+                    <h2>Tarefas</h2>
+                    <div class="box-content">
+                        <p class="Task-Descripition" ></p>
+                        <input type="checkbox" onclick="ValidarTask()" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js" ></script>
+</body>
+</html>
