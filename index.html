@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planner Em Javascript</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <div class="header-bg">
-            <h1>Planner Em Javascript</h1>
+            <h1>Planner Em Javascript<br><span>Desenvolvido Por <a href="https://github.com/HeizoAlencar" target="_blank" ><i class="fa-brands fa-square-github"></i>HeizoAlencar</a></span></h1>
         </div>
         <div class="gradient-line" ></div>
     </header>
     <main>
         <div class="container">
-            <section id="action-buttons">
-                <button  value="addTask" onclick="addTask()" class="action-button"></button>
-                <button  value="EditPlanner" onclick="EditPlanner()" class="action-button"></button>
+            <section class="action-buttons">
+                <button   onclick="addTask()" class="action-button"><i class="fa-solid fa-plus"></i>  Adicionar Tarefa</button>
+                <button   onclick="EditPlanner()" class="action-button"><i class="fa-solid fa-pen-to-square"></i> Editar Planner</button>
             </section>
             <div class="boxs" >
                 <div class="box" id="To-Do-List" >
                     <h2>Tarefas</h2>
                     <div class="box-content">
-                        <p class="Task-Descripition" ></p>
+                        <p class="Task-Descripition" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi esse animi quis neque. Ex facere similique nisi blanditiis numquam consequatur quas hic suscipit odio, nesciunt temporibus magnam accusantium maiores dolore?</p>
                         <input type="checkbox" onclick="ValidarTask()" value="">
                     </div>
                 </div>

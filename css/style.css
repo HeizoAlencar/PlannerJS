@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* fonts */
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* fonts-end */
+
+/* paleta-de-cores */
+:root{
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-info: #17a2b8;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #6c757d;
+    --color-gray-dark: #343a40;
+    --color-gray-100: #f8f9fa;
+    --color-gray-200: #e9ecef;
+}
+
+.Reiulf-Ramstad-Arkitekter---Website-Redesign-1-hex { color: #F2F2F2; }
+.Reiulf-Ramstad-Arkitekter---Website-Redesign-2-hex { color: #8C8C8C; }
+.Reiulf-Ramstad-Arkitekter---Website-Redesign-3-hex { color: #737373; }
+.Reiulf-Ramstad-Arkitekter---Website-Redesign-4-hex { color: #404040; }
+.Reiulf-Ramstad-Arkitekter---Website-Redesign-5-hex { color: #0D0D0D; }
+/* paleta-end */
+
+html , body {
+    background-color: var(--color-black);
+}
+
+/* textos */
+h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F2F2F2;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    text-decoration: none;
+    color:#404040;
+    
+}
+/* textos-end */
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* cabesario */
+
+.header-bg{
+    background-color:   #F2F2F2;
+    width: 100%;
+    color:#404040;
+    padding: 90px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cabesario-end */
+
+/* botões de ação */
+
+.action-buttons{
+    width: 100%;
+    height: 5rem;
+    padding: 3rem;
+}
+
+.action-buttons button{
+    margin-left: 30px;
+    padding: 1rem;
+    background-color: #e9ecef;
+    color:#404040;
+    border: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 24px;
+}
+
