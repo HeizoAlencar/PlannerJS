@@ -101,7 +101,7 @@ a{
     
 }
 
-form input{
+form input,textarea,label{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -189,8 +189,8 @@ form input{
 
 
 #menu-add-task{
+
     display: flex;
-    border: 3px solid;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -206,7 +206,7 @@ form input{
 
 .add-task-menu-bg{
     width: 300px;
-    height: 500px;
+    height: auto;
     background-color: white;
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -214,8 +214,43 @@ form input{
 
 }
 
-.add-task-menu-bg input,textarea {
-    border:0px;
+.add-task-menu-header{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-task-menu-form input,textarea{
+    margin: 30px;
+
+}
+
+.add-task-menu-form textarea{
+    width: 90%;
+}
+
+
+.add-task-menu-form input,textarea {
+    border:3px;
     border-bottom: 1px solid  grey;
-    outline: none;
+    resize: none;
+    font-family: "poppins",sans-serif;
+
+}
+
+.add-task-menu-header button{
+    border: 0;
+    height: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.add-task-menu-buttons button{
+    background-color: var(--color-danger);
+    color: white;
+    border: 0px;
+    font-family: 'poppins',sans-serif;
+    padding: 8px;
+    border-radius:15px ;
 }
