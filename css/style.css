@@ -155,26 +155,20 @@ form input,textarea,label{
 }
 
 
-
-.box-content {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    flex-direction: row;
-    background-color:  #e9ecef;
-    border-radius: 24px;
-    color:#404040 ;
-    padding: 15px;
-    max-width: 60%;
-    border: 3px solid;
-}
-
-.button-taks-do {
-    width: 40px;
-    height: 40px;
+.Task{
+    margin-bottom: 3rem;
+    width: auto;
+    height: auto;
     padding: 1rem;
-    background-color: #efeee9;
+    text-align: left;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--color-gray-100);
+    border-radius: 15px;
+    max-width: 1280px;
 }
+
 
 /* botões de ação-end */
 
@@ -215,6 +209,7 @@ form input,textarea,label{
 }
 
 .add-task-menu-header{
+    width: 100%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -223,6 +218,10 @@ form input,textarea,label{
 
 .add-task-menu-form input,textarea{
     margin: 30px;
+    border:3px;
+    border-bottom: 1px solid  grey;
+    resize: none;
+    font-family: "poppins",sans-serif;
 
 }
 
@@ -231,13 +230,6 @@ form input,textarea,label{
 }
 
 
-.add-task-menu-form input,textarea {
-    border:3px;
-    border-bottom: 1px solid  grey;
-    resize: none;
-    font-family: "poppins",sans-serif;
-
-}
 
 .add-task-menu-header button{
     border: 0;

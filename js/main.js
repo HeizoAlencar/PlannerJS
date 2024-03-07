@@ -1,9 +1,9 @@
 
 
+const ToDoList = document.querySelector(".TaskList")
 
 
-
-function MudarEstado(el,dis){
+function ChangeStatus(el,dis){
     var display = document.getElementById(el).style.display
     if(display == "none"){
         document.getElementById(el).style.display = dis
@@ -13,14 +13,53 @@ function MudarEstado(el,dis){
     }
 }
 
+
+
+TaskList = []
+
+Task = {}
+
 function addTask(){
+    Task.Name = document.getElementById('TaskName').value
+    Task.Description = document.getElementById('TaskDescription').value;
+    if(Task.Name != "" && Task.Description !=""){
+        TaskList.push(Task) 
+        console.log("Tarefa adicionada com sucesso!")
+        ChangeStatus('menu-add-task', 'none');
+        document.getElementById('TaskName').value = "";
+        document.getElementById('TaskDescription').value = "";
+    }
+    else{
+        alert("Preencha todos os campos")
+    }
 
-    let taskName = document.getElementById("TaskName").value;
-    let taskDescription = document.getElementById("TaskDescripition").value;
-
-    
-    
+    console.log(TaskList[1]);
+    ShowTasks()
 }
 
 
-console.log(Task.name);
+
+function ShowTasks(){
+let NewTask
+
+TaskList.forEach(Task => {
+    NewTask = NewTask + `<li>
+    <div class='Task' >
+        <div class='Task-content'>
+        <h2>
+            ${Task.Name}
+        </h2>
+        <p>
+            ${Task.Description}
+        </p>
+        </div>
+        <i id="CloseButton" class="fa-solid fa-trash"></i>
+    </div>
+</li>`
+});
+
+ToDoList.innerHTML = NewTask;
+
+}
+
+
