@@ -19,9 +19,13 @@ TaskList = []
 
 Task = {}
 
+
+
 function addTask(){
     Task.Name = document.getElementById('TaskName').value
     Task.Description = document.getElementById('TaskDescription').value;
+    
+
     if(Task.Name != "" && Task.Description !=""){
         TaskList.push(Task) 
         console.log("Tarefa adicionada com sucesso!")
@@ -42,9 +46,9 @@ function addTask(){
 function ShowTasks(){
 let NewTask
 
-TaskList.forEach(Task => {
+TaskList.forEach((Task, index) => {
     NewTask = NewTask + `<li>
-    <div class='Task' >
+    <div class='Task' id="${Task.id}" >
         <div class='Task-content'>
         <h2>
             ${Task.Name}
@@ -53,7 +57,7 @@ TaskList.forEach(Task => {
             ${Task.Description}
         </p>
         </div>
-        <i id="CloseButton" class="fa-solid fa-trash"></i>
+        <i  onclick='DeleteTask(${index})' class="fa-solid fa-trash"></i>
     </div>
 </li>`
 });
@@ -62,4 +66,8 @@ ToDoList.innerHTML = NewTask;
 
 }
 
+function DeleteTask(index){
+    delete TaskList[index]; 
+    ShowTasks()
+}
 
